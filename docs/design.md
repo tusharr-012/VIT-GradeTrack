@@ -11,18 +11,23 @@ The project is divided into different Python modules so that each part of the pr
 ## 2. Main Modules
 
 ### main.py
+
 This is the main program file. It displays the menu and calls the required functions according to the user's choice.
 
 ### subject.py
+
 This module manages subject-related operations such as adding, viewing, searching and deleting subjects. It also handles entering marks and checking attendance.
 
 ### calculator.py
+
 This module performs total marks calculation and basic marks analysis.
 
 ### validator.py
+
 This module checks whether the marks entered by the user are valid.
 
 ### tests/test_calculator.py
+
 This file contains basic tests for the marks calculation function.
 
 ## 3. Functional Requirements
@@ -71,6 +76,15 @@ The project is divided into different Python files. Each file has a specific pur
        |           |
        v           v
   Subject Data   Marks Analysis
+```
+
+### Module Flow
+
+- `main.py` controls the main menu and calls different functions.
+- `subject.py` handles subjects, marks, attendance, searching and deleting subjects.
+- `calculator.py` calculates total marks and performs basic marks analysis.
+- `validator.py` checks whether the marks entered by the user are valid.
+- `tests/test_calculator.py` contains basic tests for the marks calculation function.
 
 ## 6. Basic Program Workflow
 
@@ -100,7 +114,8 @@ Take User Choice
   +---- Exit -------------> End Program
   |
   v
-Return to Menu 
+Return to Menu
+```
 
 ## 7. Data Structures Used
 
@@ -112,7 +127,9 @@ A list is used to store all the subjects added by the user.
 
 Example:
 
+```python
 subjects = []
+```
 
 Each subject is added to this list.
 
@@ -122,10 +139,12 @@ A dictionary is used to store the details of each subject.
 
 Example:
 
+```python
 subject = {
     "name": "Problem Solving and Programming",
     "code": "CSE1021"
 }
+```
 
 When marks are entered, CAT1, CAT2 and TEE marks are also stored in the dictionary.
 
@@ -171,6 +190,7 @@ The tests can be run using:
 
 ```bash
 python -m pytest
+```
 
 ## 10. Limitations
 
