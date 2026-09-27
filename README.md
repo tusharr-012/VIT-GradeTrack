@@ -1,6 +1,8 @@
 # VIT GradeTrack
 
-VIT GradeTrack is a simple command-line Python project for managing student subjects, marks and attendance.
+VIT GradeTrack is a simple Python project that helps a student keep track of subjects, marks and attendance.
+
+It runs in the terminal and gives different options through a simple menu.
 
 ## Features
 
@@ -9,15 +11,26 @@ VIT GradeTrack is a simple command-line Python project for managing student subj
 - Enter CAT1, CAT2 and TEE marks
 - Check attendance
 - Calculate total marks
-- Analyze marks
+- See highest, lowest and average marks
 - Search for a subject
 - Delete a subject
+- Handle wrong input
 
-## How to Run
+## Project Files
 
-1. Install Python on the computer.
-2. Open the project folder in the terminal.
-3. Run the following command:
-
-```bash
-python main.py
+```text
+VIT-GradeTrack/
+│
+├── main.py
+├── subject.py
+├── calculator.py
+├── validator.py
+├── README.md
+├── statement.md
+├── .gitignore
+│
+├── tests/
+│   └── test_calculator.py
+│
+└── docs/
+    └── design.md
