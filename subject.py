@@ -38,6 +38,7 @@ def view_subjects():
 
         print("----------------------------")
 
+
 def enter_marks():
     if len(subjects) == 0:
         print("No subjects added yet.")
@@ -93,7 +94,8 @@ def attendance_check():
             except ValueError:
                 print("Please enter a valid number.")
 
-    print("Subject not found.")  
+    print("Subject not found.")
+
 
 def search_subject():
     if len(subjects) == 0:
@@ -113,10 +115,13 @@ def search_subject():
                 print("CAT1:", subject["cat1"], "/ 50")
                 print("CAT2:", subject["cat2"], "/ 50")
                 print("TEE:", subject["tee"], "/ 100")
+            else:
+                print("Marks: Not entered yet")
 
             return
 
-    print("Subject not found.") 
+    print("Subject not found.")
+
 
 def delete_subject():
     if len(subjects) == 0:
@@ -131,6 +136,4 @@ def delete_subject():
             print("Subject deleted successfully!")
             return
 
-    print("Subject not found.")                          
-         
-         
+    print("Subject not found.")
